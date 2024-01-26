@@ -3,6 +3,12 @@
 
 As a Data Engineer at a leading data analytics consulting firm, I've been tasked with a crucial project aimed at decongesting national highways. By analyzing road traffic data from various toll plazas, each with its unique IT setup and file formats, this ETL pipeline consolidates disparate data into a unified format for further analysis. This streamlined dataset will serve as a foundation for strategies to alleviate traffic congestion.
 
+# Prerequisites
+
+- Apache Airflow
+- Bash shell
+- Access to toll plaza data sources
+
 # Pipeline Design
 
 The pipeline is orchestrated using Apache Airflow, leveraging its robust scheduling and monitoring capabilities. The process encapsulates an automated ETL (Extract, Transform, Load) flow, executed via a custom Bash script and managed by an Airflow DAG (Directed Acyclic Graph).
@@ -39,13 +45,5 @@ It leverages the **BashOperator** to call the ETL script, encapsulating the logi
 # Getting Operational
 
 Once the DAG is unpaused in the Airflow UI, the pipeline is set to execute according to the defined schedule. The Airflow UI provides monitoring capabilities to ensure the ETL process is performing as expected.
-Repository Structure
 
-- Extract_Transform_data.sh: The main ETL script.
-- ETL_toll_data.py: The Airflow DAG definition file.
 
-# Prerequisites
-
-- Apache Airflow
-- Bash shell
-- Access to toll plaza data sources
