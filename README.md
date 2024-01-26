@@ -20,10 +20,10 @@ While the current implementation focuses on extraction and transformation, it se
 
 To deploy this pipeline:
 
--Start Apache Airflow with the start_airflow command.
--Create a DAG to define workflow parameters and the execution schedule (ETL_toll_data.py).
--Place the Extract_Transform_data.sh shell script in the Airflow environment.
--Make the DAG operational by copying it to the Airflow DAGs directory, unpausing it in the Airflow UI, and monitoring the execution.
+- Start Apache Airflow with the start_airflow command.
+- Create a DAG to define workflow parameters and the execution schedule (ETL_toll_data.py).
+- Place the Extract_Transform_data.sh shell script in the Airflow environment.
+- Make the DAG operational by copying it to the Airflow DAGs directory, unpausing it in the Airflow UI, and monitoring the execution.
 
 # Airflow DAG
 
@@ -33,11 +33,11 @@ Getting Operational
 Once the DAG is unpaused in the Airflow UI, the pipeline is set to execute according to the defined schedule. The Airflow UI provides monitoring capabilities to ensure the ETL process is performing as expected.
 Repository Structure
 
--Extract_Transform_data.sh: The main ETL script.
--ETL_toll_data.py: The Airflow DAG definition file.
+- Extract_Transform_data.sh: The main ETL script.
+- ETL_toll_data.py: The Airflow DAG definition file.
 
 # Prerequisites
 
--Apache Airflow
--Bash shell
--Access to toll plaza data sources
+- Apache Airflow
+- Bash shell
+- Access to toll plaza data sources
