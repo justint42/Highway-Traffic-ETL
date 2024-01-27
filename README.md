@@ -46,4 +46,5 @@ It leverages the **BashOperator** to call the ETL script, encapsulating the logi
 
 Once the DAG is unpaused in the Airflow UI, the pipeline is set to execute according to the defined schedule. The Airflow UI provides monitoring capabilities to ensure the ETL process is performing as expected.
 
+<img width="1243" alt="Screen Shot 2024-01-26 at 8 26 41 PM" src="https://github.com/justint42/Highway-Traffic-ETL/assets/106895220/a82931f6-ace3-44b9-affb-83766ac55c0f">
 
